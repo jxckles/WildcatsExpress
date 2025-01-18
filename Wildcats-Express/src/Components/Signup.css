@@ -1,0 +1,144 @@
+/* Center the signup container and give it some padding */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* Style the right panel with form elements */
+.right-panel {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Add styles for the wildcat image */
+.wildcat-img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+/* Heading styles */
+.right-panel h2 {
+  color: #990000;
+  margin-bottom: 20px;
+}
+
+/* Form layout */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Form group layout */
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.form-group ::placeholder {
+  color: #990000;
+  opacity: 80%;
+}
+
+/* Label styling */
+label {
+  flex: 0 0 150px; /* Fixed width for labels */
+  text-align: right; /* Right-align text */
+  margin-right: 10px; /* Space between label and input */
+}
+
+/* Input styling */
+input {
+  flex: 1; /* Grow to fill available space */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 100%; /* Full width within the form group */
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  background-color: #990000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  width: 100%;
+  max-width: 200px;
+  align-self: center; /* Center the button */
+}
+
+button:hover {
+  background-color: #cc0000;
+}
+
+/* Paragraph and link styling */
+p {
+  margin-top: 15px;
+}
+
+a {
+  color: #990000;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Media query for mobile and tablet screens */
+@media (max-width: 1024px) { /* Tablet */
+  .signup-container {
+    padding: 20px; /* Less padding on tablets */
+  }
+
+  .right-panel {
+    padding: 20px;
+    max-width: 90%; /* Full width with some margins on tablets */
+  }
+
+  button {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) { /* Mobile */
+  .signup-container {
+    padding: 10px;
+  }
+
+  .right-panel {
+    padding: 15px; /* Less padding on mobile */
+    max-width: 100%; /* Full width on mobile */
+  }
+
+  .wildcat-img {
+    width: 80px; /* Smaller image on mobile */
+  }
+
+  label {
+    flex: 0 0 120px; /* Adjusted label width for smaller screens */
+    text-align: left; /* Left-align text on smaller screens */
+  }
+
+  input {
+    font-size: 14px; /* Smaller font size on mobile */
+  }
+
+  button {
+    padding: 8px 16px; /* Adjusted padding for smaller screens */
+    font-size: 0.9em; /* Smaller font size for buttons */
+  }
+}

@@ -1,0 +1,458 @@
+/* ClientInterface.css */
+
+.client-interface {
+    font-family: Arial, sans-serif;
+  }
+  
+  .client-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    background-color: #ffffff;
+    border-bottom: 2px solid rgb(139, 139, 139);
+  }
+  
+  .logo-and-nav {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logo-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-image {
+    width: 400px;
+    height: 50px;
+    margin-right: 10px;
+    margin-top: 25px;
+  }
+  
+  .cat_profile {
+    width: 100px;
+  }
+  
+  .client-nav {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: #990000;
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font: inherit;
+  }
+  
+  .nav-link.active {
+    border-bottom: 2px solid #990000;
+  }
+  
+  .client-profile {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Increase the gap between items */
+    padding: 20px; 
+  }
+  .loglog {
+    width: 800px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .cart-icon-client {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    &:hover{
+      opacity: 50%;
+      width: 33px;
+      height: 33px;
+    }
+    &:active{
+      opacity: 100%;
+    }
+  }
+  
+  .menu-container {
+    position: relative;
+  }
+  
+  .client-cart-menu {
+    position: absolute;
+    top: 100%;
+    right: 15px;
+    background-color: rgb(255, 236, 236);
+    border: 1px solid #ddd;
+    border-radius: 50px 5px 50px 50px;
+    padding: 10px;
+    width: 140px;
+    height: 50px;
+    z-index: 1000;
+
+    p{
+      font-weight: bold;
+    }
+  }
+  
+  .client-main {
+    padding: 20px;
+    background-color: white;
+    min-height: calc(100vh - 80px);
+  }
+  
+  .search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    padding: 10px;
+    color: #990000;
+    background-color: #ffcfa2;
+    border: 1px solid #ffcfa2;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .menu-item {
+    background-color: #f3a55b;
+    border-radius: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .menu-image-container {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .menu-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .menu-image-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd;
+    color: #666;
+  }
+  
+  .menu-details {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .menu-name {
+    font-weight: bold;
+    color: #fff;
+    margin: 5px 0;
+  }
+  
+  .menu-price {
+    color: #fff;
+    margin: 5px 0;
+  }
+  
+  .menu-quantity {
+    font-size: 0.9em;
+    color: #fff;
+    margin: 5px 0;
+  }
+  
+  .add-to-cart-btn {
+    background-color: #990000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+        &:active{
+            background-color: #b86565;
+        }
+  }
+  
+  .add-to-cart-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .orders-tab {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .school-id-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .cart-items {
+    margin-bottom: 20px;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .quantity-controls button {
+    background-color: #990000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .order-summary {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .cancel-order-btn,
+  .place-order-btn {
+    background-color: #990000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .receipt-preview {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+  }
+  
+  .receipt-preview h3 {
+    margin-top: 0;
+    color: #990000;
+  }
+  
+  .receipt-preview ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .receipt-preview li {
+    margin-bottom: 5px;
+  }
+  
+  .print-receipt-btn {
+    background-color: #990000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .order-status-tab {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+  
+  .order-status-tab h2 {
+    font-size: 2em;
+  }
+  
+  .order-status-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  
+  .order-status-table th,
+  .order-status-table td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: #990000;
+  }
+  
+  .order-status-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .client-options {
+    color: #990000;
+    font-weight: bold;
+    font-size: 20px;
+        &:hover{
+            cursor: pointer;
+            text-decoration-line: underline;
+        }
+
+        &:hover{
+          opacity: 50%;
+        }
+        &:active{
+          opacity: 100%;
+        }
+  }
+
+  /* User Roles Styles */
+
+  .modal-overlay-client {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .user-roles-modal-client {
+    text-align: center;
+    padding: 20px 20px;
+  }
+
+  .user-roles-modal-client .my-roles-h3 {
+    margin-bottom: 10px;
+    color: #990000;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+
+  .user-roles-modal-client button {
+    background-color: #990000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 1px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    text-align: center;
+  }
+
+
+/* Client Interface Styles */
+.client-interface {
+  padding: 20px;
+  text-align: center;
+}
+
+.client-interface h1 {
+  color: #990000;
+  margin-bottom: 20px;
+}
+
+.client-interface button {
+  background-color: #990000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 20px;
+}
+
+.admin-options{
+  color: #990000;
+}
+
+  
+  @media (max-width: 768px) {
+    .client-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .client-nav {
+      margin-top: 10px;
+    }
+  
+    .menu-items {
+      grid-template-columns: 1fr;
+    }
+  
+    .order-status-table {
+      font-size: 0.8em;
+    }
+  
+    .receipt-preview {
+      font-size: 0.9em;
+    }
+  }
+  
+  @media print {
+    .client-header,
+    .client-nav,
+    .search-container,
+    .add-to-cart-btn,
+    .quantity-controls,
+    .cancel-order-btn,
+    .place-order-btn,
+    .print-receipt-btn {
+      display: none;
+    }
+  
+    .receipt-preview {
+      border: none;
+      padding: 0;
+    }
+  
+    .client-main {
+      padding: 0;
+    }
+  }

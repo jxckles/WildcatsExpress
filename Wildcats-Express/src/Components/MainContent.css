@@ -1,0 +1,124 @@
+/* General styles */
+.main-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 2em auto;
+}
+
+.primary-cta {
+    background-color: #9b1410;
+    padding: 1em;
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 0.75em;
+    margin: 1em 0;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.primary-cta:hover {
+    text-decoration: underline;
+}
+
+.primary-cta:active {
+    color: #aa0303b6;
+}
+
+.rh1 {
+    margin-top: 1em;
+    margin-bottom: 0;
+    color: #9b1410;
+    font-size: 1.35rem;
+    text-align: center;
+}
+
+.rh1 h3 {
+    color: black;
+}
+
+.wildcats-foods,
+.wildcats-food {
+    margin: 0.5em 0;
+    text-align: center;
+}
+
+.express-mobile {
+    color: #f2b54c;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-bottom: 1.5em;
+    line-height: 1.5;
+}
+
+/* Image styles */
+.cat img {
+    margin-top: 1em;
+    width: 50%; /* Adjusted width to make the image smaller */
+    height: auto; /* Maintain aspect ratio */
+}
+/* For mobile devices */
+@media (max-width: 600px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cat img {
+        width: 80%;
+        margin-top: 1em;
+    }
+
+    .primary-cta {
+        width: 80%;
+        margin: 1em 0;
+    }
+}
+
+/* For tablets */
+@media (min-width: 601px) and (max-width: 1280px) {
+    .cat img {
+        width: 60%;
+        margin-top: 2em;
+    }
+
+    .primary-cta {
+        width: 70%;
+    }
+}
+
+/* For desktop */
+@media (min-width: 1280px) {
+    .main-content {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .primary-cta {
+        width: auto;
+        margin-right: 2em;
+    }
+
+    .cat {
+        width: 40%; /* Container for the image */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cat img {
+        width: 100%;
+        height: auto;
+    }
+}

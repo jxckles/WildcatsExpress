@@ -1,0 +1,182 @@
+/* General Styles */
+body {
+    background-color: white;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .wrap {
+    margin: 1em;
+  }
+  
+  hr {
+    display: block;
+    position: relative;
+    margin-top: -2%;
+  }
+  
+  .express-mobile {
+    color: #f2b54c;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 599px) {
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+  
+    .hide-title {
+        display: none; /* Hide on mobile */
+    }
+  
+    .hide-mobile {
+        display: block; /* Show on mobile */
+    }
+  
+    .hide-hr {
+        display: none;
+    }
+  
+    .login-cta, .signup-cta {
+      background: none; /* Remove background color */
+      color: #9b1410; /* Change text color */
+      padding: 0; /* Remove padding */
+      border-radius: 0; /* Remove border radius */
+      font-size: 1.70rem; /* Adjust font size if needed */
+      text-align: right; /* Align text to the left */
+      margin: 2em 0; /* Adjust margin if needed */
+  
+      &:hover {
+          text-decoration: underline; /* Add underline on hover */
+      }
+  }
+  
+  .login-cta:active, .signup-cta:active {
+      color: #555; /* Change text color on active */
+  }
+  
+    .primary-cta {
+        width: 80%; /* Full width on mobile */
+        margin: 1em 0; /* Margin for spacing */
+    }
+  
+    .cat img {
+        width: 80%; /* Smaller image size */
+        margin-top: 2em; /* Space below CTA */
+        position: relative;
+    }
+  }
+  
+  /* Tablet Styles */
+  @media (min-width: 600px) and (max-width: 1279px) {
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+  
+    .wrapper {
+        margin: 0 4em;
+    }
+  
+    .hide-title {
+        display: block; /* Show on tablet and larger screens */
+    }
+  
+    .hide-mobile {
+        display: none; /* Hide on tablet and larger screens */
+    }
+  
+    .login-cta, .signup-cta {
+        background: none; /* Remove background color */
+        color: #9b1410; /* Change text color */
+        padding: 0; /* Remove padding */
+        border-radius: 0; /* Remove border radius */
+        font-size: 1.5rem; /* Adjust font size if needed */
+        text-align: right; /* Align text to the left */
+        margin: 2em 0; /* Adjust margin if needed */
+  
+        &:hover {
+            font-size: 1.5rem;
+            text-decoration: underline; /* Add underline on hover */
+        }
+    }
+  
+    .login-cta:active, .signup-cta:active {
+        color: #555; /* Change text color on active */
+    }
+    .primary-cta {
+        width: 60%; /* Slightly larger width on tablet */
+    }
+  
+    .cat img {
+        width: 60%; /* Larger image size */
+        margin-top: 2em; /* More space below CTA */
+        position: relative;
+    }
+  }
+  
+  /* Desktop Styles */
+  @media (min-width: 1280px) {
+      .wrapper {
+          margin: 0 auto;
+          max-width: 1200px;
+      }
+    
+      .main-content {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          padding: 2em;
+      }
+    
+      .hide-title {
+        display: block; 
+        margin-left: 10%;
+      }
+    
+      .hide-mobile {
+        display: none;
+      }
+    
+      h3{
+        margin-left: 10%; 
+      }
+      .wildcats-food,
+      h3,
+      .primary-cta {
+        text-align: left;
+      }
+  
+      .wildcats-food {
+        font-size: clamp(3em, 5vw, 7em); /* Minimum 2.5em, preferred 4vw, maximum 5em */
+        font-weight:1000;
+        transition: font-size 0.2s ease; /* Smooth transition on resize */
+      }
+  
+      .primary-cta {
+        width: auto;
+        margin-top: 1em; /* Adjust vertical spacing if needed */
+        margin-right: 60%; 
+      }
+    
+      .cat {
+        width: 40%; /* Container for the image */
+        margin-left: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    
+      .cat img {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+    }
+  
